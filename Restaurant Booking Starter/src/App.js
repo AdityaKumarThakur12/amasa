@@ -1,5 +1,7 @@
 import React from "react";
+import Setting from "./pages/settings";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Restaurent from "./pages/addRestaurent";
 
 function App() {
   return (
@@ -13,8 +15,9 @@ function App() {
         </nav>
         <main style={{ padding: "1rem" }}>
           <Routes>
-            <Route path="/settings" element={<div>Settings Page</div>} />
+            <Route path="/settings" element={<Setting/>} />
             <Route path="/booking" element={<div>Booking Page</div>} />
+            <Route path='/add' element={<Restaurent/>}/>
           </Routes>
         </main>
       </div>
